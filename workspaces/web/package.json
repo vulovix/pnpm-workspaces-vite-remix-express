@@ -1,0 +1,40 @@
+{
+  "name": "web",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && vite build --ssr",
+    "dev": "node ./server.mjs",
+    "start": "cross-env NODE_ENV=production node ./server.mjs",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/express": "0.0.0-nightly-bf2feb9-20231111",
+    "@remix-run/node": "0.0.0-nightly-bf2feb9-20231111",
+    "@remix-run/react": "0.0.0-nightly-bf2feb9-20231111",
+    "express": "^4.18.2",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+		"shared": "workspace:^"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "0.0.0-nightly-bf2feb9-20231111",
+    "@remix-run/eslint-config": "0.0.0-nightly-bf2feb9-20231111",
+    "@types/express": "^4.17.20",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.38.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "^4.2.1",
+    "@mdx-js/rollup":"^3.0.0",
+    "remark-frontmatter":"5.0.0",
+    "remark-mdx-frontmatter":"^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
